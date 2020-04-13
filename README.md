@@ -3,6 +3,9 @@
 <p align="center">
  <img width="60%" height="60%" src="https://res.cloudinary.com/dwc5hkby0/image/upload/v1586797570/project-logo.svg">
 </p>
+
+![use-viacep](https://badgen.net/bundlephobia/minzip/@rsiqueira/use-viacep)
+
 React hook to fetch Brazilian CEP's using ViaCEP api.
 
 ## Install
