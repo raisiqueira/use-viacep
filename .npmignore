@@ -1,0 +1,8 @@
+node_modules
+test
+tsconfig.json
+yarn.lock
+*.log
+.cache
+example
+.github
