@@ -3,3 +3,7 @@
 node_modules
 .cache
 dist
+.parcel
+.parcel-cache
+.cache
+coverage
