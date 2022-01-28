@@ -7,5 +7,5 @@ export default {
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   modulePaths: ['<rootDir>/src/'],
   clearMocks: true,
-  testMatch: ['<rootDir>/src/**/*.test.[tj]s?(x)']
+  testMatch: ['<rootDir>/src/**/*.test.[tj]s?(x)'],
 };
