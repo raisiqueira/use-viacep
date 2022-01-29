@@ -14,13 +14,13 @@ type ViaCepResponse = {
 
 type UseViaCepHook = {
   cep: ViaCepResponse;
-  error: { message: string; error: any };
+  error: string | null;
   loading: boolean;
 };
 
 const useViaCep = (value: string | number = ''): UseViaCepHook => {
   const [cep, setCep] = useState<ViaCepResponse>({} as ViaCepResponse);
-  const [error, setError] = useState<any>(null);
+  const [error, setError] = useState<null | string>(null);
   const [loading, setLoading] = useState<boolean>(false);
 
   const cepFormatted = useMemo(() => {
@@ -39,18 +39,15 @@ const useViaCep = (value: string | number = ''): UseViaCepHook => {
 
       setCep(json as ViaCepResponse);
 
-      if (response?.status !== 200 || (json as any)?.error) {
-        setError({
-          message: 'Error to load CEP data',
-          error: (json as any)?.error,
-        });
+      if (response?.status !== 200) {
+        setError('Error to get CEP');
         setLoading(false);
       }
       setLoading(false);
     } catch (err) {
       console.error('Error to get CEP: ', err);
       setLoading(false);
-      setError({ message: 'Error to get CEP', error: err });
+      setError('Error to get CEP');
     }
   }, [cepFormatted]);
 
