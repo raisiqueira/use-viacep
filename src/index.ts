@@ -18,7 +18,7 @@ type UseViaCepHook = {
   loading: boolean;
 };
 
-const useViaCep = (value: string | number = ''): UseViaCepHook => {
+const useViaCep = (value: string | null = ''): UseViaCepHook => {
   const [cep, setCep] = useState<ViaCepResponse>({} as ViaCepResponse);
   const [error, setError] = useState<null | string>(null);
   const [loading, setLoading] = useState<boolean>(false);
