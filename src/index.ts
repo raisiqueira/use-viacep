@@ -34,13 +34,16 @@ const useViaCep = (value: string | number = ''): UseViaCepHook => {
   const fetchCep = useCallback(async () => {
     setLoading(true);
     try {
-      const response = await fetch(viaCepURL);
+      const response = await fetch(viaCepURL, { method: 'GET' });
       const json = await response.json();
 
-      setCep(json);
+      setCep(json as ViaCepResponse);
 
-      if (response?.status !== 200 || json?.error) {
-        setError({ message: 'Error to load CEP data', error: json?.error });
+      if (response?.status !== 200 || (json as any)?.error) {
+        setError({
+          message: 'Error to load CEP data',
+          error: (json as any)?.error,
+        });
         setLoading(false);
       }
       setLoading(false);
