@@ -1,6 +1,6 @@
 {
   "name": "@rsiqueira/use-viacep",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "license": "MIT",
   "description": "React hook to fetch Brazilian CEP's using ViaCEP api.",
   "author": {
