@@ -31,7 +31,7 @@ const App = () => {
 
   return (
     <div>
-      <input placeholder="cep" onChange={e => setData(e.target.value)} />
+      <input placeholder="cep" onChange={(e) => setData(e.target.value)} />
     </div>
   );
 };
@@ -68,6 +68,10 @@ npm start # or yarn start
 ```
 
 The default example imports and live reloads whatever is in `/dist`, so if you are seeing an out of date component, make sure TSDX is running in watch mode like we recommend above. **No symlinking required**!
+
+## Sponsors
+
+[![Sponsors](https://github.com/raisiqueira/use-viacep/raw/HEAD/sponsorkit/sponsors.svg)](#)
 
 ## License
 

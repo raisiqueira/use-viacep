@@ -7,3 +7,4 @@ dist
 .parcel-cache
 .cache
 coverage
+.env
