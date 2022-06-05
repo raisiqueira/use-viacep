@@ -6,3 +6,5 @@ yarn.lock
 example
 .github
 images
+.env.example
+sponsorkit
