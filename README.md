@@ -71,7 +71,7 @@ The default example imports and live reloads whatever is in `/dist`, so if you a
 
 ## Sponsors
 
-[![Sponsors](https://github.com/raisiqueira/use-viacep/raw/HEAD/sponsorkit/sponsors.svg)](#)
+[![Sponsors](https://cdn.jsdelivr.net/gh/raisiqueira/static/sponsors.svg)](https://headless-stepper.netlify.app/sponsors)
 
 ## License
 
