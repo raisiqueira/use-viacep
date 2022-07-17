@@ -7,9 +7,10 @@ type ViaCepResponse = {
   bairro: string;
   localidade: string;
   uf: string;
-  unidade: string;
   ibge: string;
   gia: string;
+  ddd: string;
+  siafi: string;
 };
 
 type UseViaCepHook = {
