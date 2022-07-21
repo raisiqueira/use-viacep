@@ -15,9 +15,12 @@
   "main": "dist/main.js",
   "module": "dist/use-viacep.esm.js",
   "types": "dist/types.d.ts",
-  "files": ["dist", "src"],
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
-    "dev": "parcel watch",
+    "dev": "(cd example && npm start)",
     "build": "parcel build",
     "check-types": "tsc",
     "test": "jest",
@@ -27,7 +30,7 @@
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "sponsorkit": "sponsorkit"
+    "postinstall": "(cd example && npm i)"
   },
   "peerDependencies": {
     "react": ">=16.8.0 || >=17.0.0 || >= 18.0.0"
@@ -60,7 +63,6 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "size-limit": "^7.0.5",
-    "sponsorkit": "^0.4.1",
     "ts-jest": "^27.1.3",
     "ts-node": "^10.4.0",
     "tslib": "^2.3.1",
