@@ -1,6 +1,6 @@
 {
   "name": "@rsiqueira/use-viacep",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "MIT",
   "description": "React hook to fetch Brazilian CEP's using ViaCEP api.",
   "author": {
@@ -29,8 +29,7 @@
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "size": "size-limit",
-    "analyze": "size-limit --why",
-    "postinstall": "(cd example && npm i)"
+    "analyze": "size-limit --why"
   },
   "peerDependencies": {
     "react": ">=16.8.0 || >=17.0.0 || >= 18.0.0"
