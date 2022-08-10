@@ -39,6 +39,7 @@ const useViaCep = (value: string | null = ''): UseViaCepHook => {
       const json = await response.json();
 
       setCep(json as ViaCepResponse);
+      setError(json?.erro || null);
 
       if (response?.status !== 200) {
         setError('Error to get CEP');
