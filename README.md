@@ -39,35 +39,34 @@ const App = () => {
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
-## Commands (for development only)
+## Contributing
+
+Clone this repository and run `pnpm install`. If you don't have pnpm, install it with `npm install -g pnpm`.
+
+### Folder structure
+
+- `example` - A folder with an example project. Think as playground.
+- `lib` - The source of `@rsiqueira/use-viacep`.
+
+### What is in this repository?
+
+- [PNPM](https://pnpm.io/workspaces) as workspace manager and package manager.
+- [TSUP](https://tsup.egoist.dev/) as a TypeScript universal package.
+- [Vitest](https://vitest.dev/) as a test runner.
+- [Size Limit](https://github.com/ai/size-limit) as a size limit plugin.
+- [Prettier](https://prettier.io/) as a code formatter.
+- [ESLint](https://eslint.org/) as a code linter.
+
+### Using the Playground
+
+In the root of the repository, run the following command:
 
 ```bash
-npm start # or yarn start
+pnpm run dev # to build the library (with --watch flag)
+pnpm -F example dev
 ```
 
-This builds to `/dist` and runs the project in watch mode so any edits you save inside `src` causes a rebuild to `/dist`.
-
-Then run the example inside another:
-
-```bash
-cd example
-npm i # or yarn to install dependencies
-npm start # or yarn start
-```
-
-To do a one-off build, use `npm run build` or `yarn build`.
-
-To run tests, use `npm test` or `yarn test`.
-
-## Using the Playground
-
-```bash
-cd example
-npm i # or yarn to install dependencies
-npm start # or yarn start
-```
-
-The default example imports and live reloads whatever is in `/dist`, so if you are seeing an out of date component, make sure TSDX is running in watch mode like we recommend above. **No symlinking required**!
+The command will run the example project with [Vite](https://vitejs.dev/).
 
 ## Sponsors
 
