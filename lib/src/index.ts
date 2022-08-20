@@ -46,13 +46,13 @@ const useViaCep = (value: string | null = ''): UseViaCepHook => {
       setLoading(false);
       setError('Error to get CEP');
     }
-  }, [cepFormatted]);
+  }, [viaCepURL]);
 
   useEffect(() => {
     if (cepFormatted.length === 8) {
       fetchCep();
     }
-  }, [fetchCep]);
+  }, [cepFormatted.length, fetchCep]);
 
   return { cep, error, loading };
 };
