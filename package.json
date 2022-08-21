@@ -14,8 +14,8 @@
     "lint": "eslint ./lib",
     "lint:fix": "eslint ./lib ./example --fix && yarn format",
     "type-check": "tsc --noEmit",
-    "publish:dev": "pnpm run build && npm publish --tag next",
-    "publish:prod": "pnpm run build && npm publish"
+    "publish:dev": "pnpm run build && cd lib && npm publish --tag next",
+    "publish:prod": "pnpm run build && cd lib && npm publish"
   },
   "description": "PNPM monorepo template",
   "license": "MIT",
