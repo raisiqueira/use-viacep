@@ -23,7 +23,7 @@ importers:
       tsup: ^6.2.1
       typescript: ^4.7.4
       vite: ^3.0.5
-      vitest: 0.24.4
+      vitest: 0.25.3
     devDependencies:
       '@commitlint/config-conventional': 17.0.3
       '@size-limit/preset-small-lib': 8.0.1_size-limit@8.0.1
@@ -44,7 +44,7 @@ importers:
       tsup: 6.2.1_typescript@4.7.4
       typescript: 4.7.4
       vite: 3.0.5
-      vitest: 0.24.4
+      vitest: 0.25.3
 
   example:
     specifiers:
@@ -70,7 +70,6 @@ importers:
   lib:
     specifiers:
       '@testing-library/react': ^13.3.0
-      '@testing-library/react-hooks': ^8.0.1
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
       happy-dom: ^6.0.4
@@ -78,19 +77,16 @@ importers:
       react: ^18.2.0
       react-dom: ^18.2.0
       vitest: 0.22.1
-      vitest-fetch-mock: ^0.2.1
     dependencies:
       vitest: 0.22.1_happy-dom@6.0.4
     devDependencies:
       '@testing-library/react': 13.3.0_biqbaboplfbrettd7655fr4n2y
-      '@testing-library/react-hooks': 8.0.1_zxljzmqdrxwnuenbkrz77w74uy
       '@types/react': 18.0.17
       '@types/react-dom': 18.0.6
       happy-dom: 6.0.4
       msw: 0.44.2
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      vitest-fetch-mock: 0.2.1_vitest@0.22.1
 
 packages:
 
@@ -737,29 +733,6 @@ packages:
       dom-accessibility-api: 0.5.14
       lz-string: 1.4.4
       pretty-format: 27.5.1
-    dev: true
-
-  /@testing-library/react-hooks/8.0.1_zxljzmqdrxwnuenbkrz77w74uy:
-    resolution: {integrity: sha512-Aqhl2IVmLt8IovEVarNDFuJDVWVvhnr9/GCU6UUnrYXwgDFF9h2L2o2P9KBni1AST5sT6riAyoukFLyjQUgD/g==}
-    engines: {node: '>=12'}
-    peerDependencies:
-      '@types/react': ^16.9.0 || ^17.0.0
-      react: ^16.9.0 || ^17.0.0
-      react-dom: ^16.9.0 || ^17.0.0
-      react-test-renderer: ^16.9.0 || ^17.0.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      react-dom:
-        optional: true
-      react-test-renderer:
-        optional: true
-    dependencies:
-      '@babel/runtime': 7.18.9
-      '@types/react': 18.0.17
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      react-error-boundary: 3.1.4_react@18.2.0
     dev: true
 
   /@testing-library/react/13.3.0_biqbaboplfbrettd7655fr4n2y:
@@ -1599,14 +1572,6 @@ packages:
 
   /create-require/1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
-    dev: true
-
-  /cross-fetch/3.1.5:
-    resolution: {integrity: sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==}
-    dependencies:
-      node-fetch: 2.6.7
-    transitivePeerDependencies:
-      - encoding
     dev: true
 
   /cross-spawn/7.0.3:
@@ -4000,16 +3965,6 @@ packages:
       react: 18.2.0
       scheduler: 0.23.0
 
-  /react-error-boundary/3.1.4_react@18.2.0:
-    resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==}
-    engines: {node: '>=10', npm: '>=6'}
-    peerDependencies:
-      react: '>=16.13.1'
-    dependencies:
-      '@babel/runtime': 7.18.9
-      react: 18.2.0
-    dev: true
-
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
@@ -4304,6 +4259,11 @@ packages:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
 
+  /source-map/0.6.1:
+    resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
   /source-map/0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
     engines: {node: '>= 8'}
@@ -4577,6 +4537,7 @@ packages:
   /tinypool/0.2.4:
     resolution: {integrity: sha512-Vs3rhkUH6Qq1t5bqtb816oT+HeJTXfwt2cbPH17sWHIYKTotQIFPk3tf2fgqRrVyMDVOc1EnPgzIxfIulXVzwQ==}
     engines: {node: '>=14.0.0'}
+    dev: false
 
   /tinypool/0.3.0:
     resolution: {integrity: sha512-NX5KeqHOBZU6Bc0xj9Vr5Szbb1j8tUHIeD18s41aDJaPeC5QTdEhK0SpdpUrZlj2nv5cctNcSjaKNanXlfcVEQ==}
@@ -4859,18 +4820,6 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /vitest-fetch-mock/0.2.1_vitest@0.22.1:
-    resolution: {integrity: sha512-u6wjTy3huKLx9VDzChOpt3BS9jIhCTbruqLIlkhXZ8dRMzNAsmiTIskI39+uqNegkFMQeEefBqKYZ3UC142AJA==}
-    engines: {node: '>=14.14.0'}
-    peerDependencies:
-      vitest: '>=0.16.0'
-    dependencies:
-      cross-fetch: 3.1.5
-      vitest: 0.22.1_happy-dom@6.0.4
-    transitivePeerDependencies:
-      - encoding
-    dev: true
-
   /vitest/0.22.1_happy-dom@6.0.4:
     resolution: {integrity: sha512-+x28YTnSLth4KbXg7MCzoDAzPJlJex7YgiZbUh6YLp0/4PqVZ7q7/zyfdL0OaPtKTpNiQFPpMC8Y2MSzk8F7dw==}
     engines: {node: '>=v14.16.0'}
@@ -4909,9 +4858,10 @@ packages:
       - stylus
       - supports-color
       - terser
+    dev: false
 
-  /vitest/0.24.4:
-    resolution: {integrity: sha512-4ratHSyVEJPtBLV00uhL4Wj3Pmandc9rsxUkE0q9peNOfaOgGF4lEepdkaXGRi9AGFKr1GRVtjGOJ6Fp2lCpEg==}
+  /vitest/0.25.3:
+    resolution: {integrity: sha512-/UzHfXIKsELZhL7OaM2xFlRF8HRZgAHtPctacvNK8H4vOcbJJAMEgbWNGSAK7Y9b1NBe5SeM7VTuz2RsTHFJJA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -4935,9 +4885,12 @@ packages:
       '@types/chai': 4.3.3
       '@types/chai-subset': 1.3.3
       '@types/node': 18.6.5
+      acorn: 8.8.0
+      acorn-walk: 8.2.0
       chai: 4.3.6
       debug: 4.3.4
       local-pkg: 0.4.2
+      source-map: 0.6.1
       strip-literal: 0.4.2
       tinybench: 2.3.1
       tinypool: 0.3.0
