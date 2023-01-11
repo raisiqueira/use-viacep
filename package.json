@@ -7,7 +7,7 @@
     "dev": "pnpm -F @rsiqueira/use-viacep dev",
     "test": "pnpm -F @rsiqueira/use-viacep test",
     "test:watch": "pnpm -F @rsiqueira/use-viacep test:watch",
-    "coverage": "pnpm -F lib coverage",
+    "coverage": "pnpm -F @rsiqueira/use-viacep coverage",
     "size": "size-limit",
     "prepare": "husky install",
     "prettier": "prettier",
