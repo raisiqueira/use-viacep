@@ -15,7 +15,7 @@ export const SUCCESS_RESPONSE = {
 };
 
 export const ERROR_RESPONSE = {
-  error: true,
+  erro: true,
 };
 
 const apiHandlers = [
