@@ -39,7 +39,7 @@
     "tsup": "^7.1.0",
     "typescript": "^5.0.3",
     "vite": "^4.2.1",
-    "vitest": "0.29.8"
+    "vitest": "0.32.2"
   },
   "packageManager": "pnpm@7.9.0",
   "size-limit": [
