@@ -70,7 +70,7 @@ The command will run the example project with [Vite](https://vitejs.dev/).
 
 ## Sponsors
 
-[![Sponsors](https://cdn.jsdelivr.net/gh/raisiqueira/static/sponsors.svg)](https://headless-stepper.netlify.app/sponsors)
+[![Sponsors](https://cdn.jsdelivr.net/gh/raisiqueira/static@master/sponsors.svg)](https://github.com/sponsors/raisiqueira)
 
 ## License
 

@@ -10,8 +10,14 @@ React hook to fetch Brazilian CEP's using ViaCEP api.
 
 ## Install
 
+Use your prefer package manager
+
 ```bash
-npm i --save @rsiqueira/use-viacep # or yarn add @rsiqueira/use-viacep
+npm i --save @rsiqueira/use-viacep
+# or
+yarn add @rsiqueira/use-viacep
+# or
+pnpm add @rsiqueira/use-viacep
 ```
 
 ## Usage
@@ -70,7 +76,7 @@ The command will run the example project with [Vite](https://vitejs.dev/).
 
 ## Sponsors
 
-[![Sponsors](https://cdn.jsdelivr.net/gh/raisiqueira/static/sponsors.svg)](https://headless-stepper.netlify.app/sponsors)
+[![Sponsors](https://cdn.jsdelivr.net/gh/raisiqueira/static@master/sponsors.svg)](https://github.com/sponsors/raisiqueira)
 
 ## License
 
